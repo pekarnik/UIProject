@@ -14,6 +14,10 @@ public class PanelController : MonoBehaviour
 	private Transform _upperPosition;
 	private bool _isTouched=false;
 	private float _speed=0.1f;
+	private void Start()
+	{
+		//transform.position = _lowerPosition.position;
+	}
 	private void OnMouseDrag()
 	{
 		_isTouched = true;
@@ -43,6 +47,7 @@ public class PanelController : MonoBehaviour
 	{
 		if (!_isTouched)
 		{
+			
 			if (transform.position.y < _lowerPosition.position.y ||
 				Vector2.Distance(transform.position, _lowerPosition.position)
 				< Vector2.Distance(_middlePosition.position, transform.position))
