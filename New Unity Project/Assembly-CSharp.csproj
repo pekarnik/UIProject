@@ -61,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\PanelController.cs" />
+    <Compile Include="Assets\Script\Position.cs" />
+    <Compile Include="Assets\Script\SwapperController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/tested/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
